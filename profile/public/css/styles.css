@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
+  /* background-color: #24252a; */
+}
+
+li,
+.nav_opt,
+button,
+.logo {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 500;
+  font-size: 12px;
+  /* color: #edf0f1; */
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  /* top: 0; */
+  align-items: center;
+  padding: 18px 4%;
+  z-index: 1000;
+  /* background-color: #24252a; */
+  background-color: #ffff;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav_links li .nav_opt {
+  transition: all 0.8s ease 0s;
+  font-weight: bold;
+}
+
+.nav_links li .nav_opt:hover {
+  color: #0088a9;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.89)),
+    url("../assets/common-bg.svg");
+  /* background-color: #24252a; */
+
+  /* background-color: #0088a9; */
+}
+
+.banner_content {
+  width: 90%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin: 160px auto 0; */
+  text-align: center;
+  color: #edf0f1;
+}
+
+.banner_content .heading {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.heading_info {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+}
+
+.heading_cta {
+  margin: 2rem 2rem;
+  text-align: center;
+}
+
+.heading_cta .btn {
+  margin: 1rem 30px;
+}
+
+.btn {
+  border: 1px solid white;
+  /* background-color: white; */
+  text-decoration: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+p.hf_text {
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+/* arrow pointing down */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mouse_scroll {
+  /* display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	margin-top: 125px; */
+  position: absolute;
+  margin: 6% 50% 0;
+}
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.unu {
+  margin-top: 1px;
+}
+
+.unu,
+.doi,
+.trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-o-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* end of errow pointing down */
+
+.about {
+  padding: 3rem 0;
+  background: #fafafa;
+}
+.about_container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+}
+
+.about_top {
+  margin-bottom: 8rem;
+}
+
+.about_title {
+  text-align: center;
+  margin: 0 0 3rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about_title-main::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 1.5rem;
+  background: #0088a9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.about_title-main {
+  /* display: block; */
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.about_top-data {
+  text-align: center;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 60rem;
+}
+
+.about_main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+}
+
+.about_content-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about_content-details-para {
+  color: #666;
+  font-size: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill_box {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.2rem;
+  margin-right: 1rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.sec-pad {
+  padding: 6rem 0;
+}
+
+.heading2 {
+  margin-bottom: 3.5rem;
+  /* position: relative; */
+}
+
+.heading2-title {
+  display: block;
+  position: relative;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.heading2_sub-title {
+  display: block;
+  text-align: center;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 50rem;
+}
+
+.heading2-title::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 1.5rem;
+  background: #0088a9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.btn-bg {
+  /* color: black; */
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 2.5rem 0 0;
+  border-radius: 7px;
+  background-color: #0088a9;
+  padding: 1rem 3rem;
+  position: absolute;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+}
+
+.footer-upper-left {
+  width: 40%;
+  order: 1;
+  max-width: 50rem;
+}
+
+.footer-upper-left-heading, .footer-upper-right-heading{
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.footer-upper-left-para {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.footer-upper-right {
+  order: 2;
+}
+
+.footer-upper-right-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-right-icon {
+  width: 1.4rem;
+}
+
+.projects {
+  background: #fafafa;
+}
